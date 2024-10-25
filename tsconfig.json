@@ -1,5 +1,4 @@
 {
-  "extends": "../../tsconfig.json",
   "include": [
     "./src/**/*.ts"
   ],
@@ -21,7 +20,6 @@
       "jest"
     ],
     "typeRoots": [
-      "../../node_modules/@types",
       "./node_modules/@types"
     ],
     "noUnusedLocals": true,

@@ -34,7 +34,9 @@
 
 ```bash
 npm install @deepmojo/crypto-core
+
 # or for yarn
+
 yarn add @deepmojo/crypto-core
 ```
 
