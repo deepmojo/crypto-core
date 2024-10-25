@@ -1,4 +1,4 @@
-# DeepMojo Crypto-Core
+# DeepMojo Crypto-Core [![Jest Test Suite Badge](https://github.com/deepmojo/crypto-core/actions/workflows/jest.yml/badge.svg)](https://github.com/deepmojo/crypto-core/actions/workflows/jest.yml)
 
 > ⚠️ **SECURITY NOTICE** ⚠️
 >
