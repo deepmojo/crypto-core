@@ -1,10 +1,10 @@
 package-lock.json
 yarn.lock
-typedoc.json
 typedoc-output.json
 node_modules
 .editorconfig
 .yarn
+/docs
 /coverage
 /keys
 /lib
