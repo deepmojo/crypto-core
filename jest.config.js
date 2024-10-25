@@ -1,16 +1,15 @@
+/** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
-  verbose: false,
   preset: 'ts-jest',
-  testEnvironment: 'jsdom',
-  globals: {
-    'ts-jest': {
-      tsconfig: './tsconfig.json'
-    }
+  testEnvironment: 'node',
+  transform: {
+    '^.+\\.tsx?$': ['ts-jest', {
+      tsconfig: './tsconfig.json'  // Point to project-relative path
+    }]
   },
-  collectCoverage: false,
-  coverageReporters: [],
   coverageDirectory: 'coverage',
-  testPathIgnorePatterns: [
-    'lib/'
+  collectCoverageFrom: [
+    'src/**/*.{ts,tsx}',
+    '!src/**/*.d.ts'
   ]
 };
