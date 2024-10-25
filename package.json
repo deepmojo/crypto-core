@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc -p ./tsconfig.json",
-    "test": "jest --verbose --coverage --config jest.config.js",
+    "test": "jest --verbose --config ./jest.config.js",
     "deps:check": "npm-check --skip-unused",
     "deps:update": "npm-check --update --skip-unused --save-exact"
   },
