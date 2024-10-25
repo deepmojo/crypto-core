@@ -1,0 +1,36 @@
+{
+  "name": "@deepmojo/crypto-core",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "test": "jest --verbose --coverage --config jest.config.js",
+    "deps:check": "npm-check --skip-unused",
+    "deps:update": "npm-check --update --skip-unused --save-exact"
+  },
+  "dependencies": {
+    "typescript": "5.6.3"
+  },
+  "devDependencies": {
+    "@types/jest": "29.5.14",
+    "@types/node": "22.7.9",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "npm-check": "^6.0.1",
+    "ts-jest": "29.2.5",
+    "tsx": "4.19.1"
+  },
+  "packageManager": "yarn@4.1.1",
+  "yarn": {
+    "args": [
+      "--inline-builds"
+    ]
+  },
+  "engineStrict": true,
+  "engines": {
+    "npm": ">=10.0.0 <11.0.0",
+    "node": "20.12.1"
+  }
+}
