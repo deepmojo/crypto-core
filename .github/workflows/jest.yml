@@ -9,9 +9,19 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
       - name: Install dependencies
         run: npm install
-      - name: Run Jest tests
-        run: npm run test
+
+      - name: Show current directory and files
+        run: |
+          pwd
+          ls -la
+
+      - name: Run tests
+        run: npm test
