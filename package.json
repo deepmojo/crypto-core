@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc -p ./tsconfig.json",
-    "build:typedoc:json": "rm -f ./typedoc.json && typedoc --json typedoc.json src",
-    "build:typedoc:html": "typedoc --out docs",
+    "build:typedoc:json": "rm -f ./typedoc.json && typedoc --json typedoc-output.json ./src",
+    "build:typedoc:html": "rm -rf ./docs/ && typedoc --options typedoc.json",
     "test": "jest --verbose --config ./jest.config.js",
     "deps:check": "npm-check --skip-unused",
     "deps:update": "npm-check --update --skip-unused --save-exact"
@@ -23,7 +23,8 @@
     "npm-check": "^6.0.1",
     "ts-jest": "29.2.5",
     "tsx": "4.19.1",
-    "typedoc": "^0.26.10"
+    "typedoc": "^0.26.10",
+    "typedoc-plugin-markdown": "^4.2.9"
   },
   "packageManager": "yarn@4.1.1",
   "yarn": {
