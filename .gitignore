@@ -1,5 +1,6 @@
 package-lock.json
 yarn.lock
+typedoc.json
 node_modules
 /coverage
 /keys
