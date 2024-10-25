@@ -40,9 +40,13 @@ npm install @deepmojo/crypto-core
 yarn add @deepmojo/crypto-core
 ```
 
+Pro Tip: In newer versions of yarn, to get a local `node_modules` folder you will want `yarn config set nodeLinker node-modules`.
+
 ## Build
 
-npm run build or yarn build: Compiles the TypeScript code using the tsconfig.json configuration file. This script is used to build the project and prepare it for distribution.
+`npm run build` or `yarn build`: Compiles the TypeScript code using the tsconfig.json configuration file. This script is used to build the project and prepare it for distribution.
+
+`npm run build:typedoc`: Generates a `typedoc.json` in the root of the project, as needed for generating the static documentation for this library.
 
 ## Test
 

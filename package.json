@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc -p ./tsconfig.json",
-    "build:typedoc": "typedoc --json typedoc.json src",
+    "build:typedoc:json": "rm -f ./typedoc.json && typedoc --json typedoc.json src",
+    "build:typedoc:html": "typedoc --out docs",
     "test": "jest --verbose --config ./jest.config.js",
     "deps:check": "npm-check --skip-unused",
     "deps:update": "npm-check --update --skip-unused --save-exact"
