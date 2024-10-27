@@ -1,4 +1,4 @@
-name: "Generate and Deploy GitHub Pages"
+name: "Regenerate Docs & Deploy to GitHub Pages"
 
 on:
   push:
@@ -36,11 +36,22 @@ jobs:
           npm install
           git config --global user.email "github-actions@github.com"
           git config --global user.name "GitHub Actions"
-          git add package-lock.json
-          git commit -m "Generate package-lock.json" || echo "No changes to commit"
+
+      - name: Generate documentation
+        run: npx typedoc
+
+      - name: Push changes to crypto-core
+        run: |
+          git clone https://x-access-token:${{ secrets.SYNC_PAT_CRYPTO_DOCS }}@github.com/deepmojo/crypto-core.git temp-repo
+          cp -r docs temp-repo/
+          cp package-lock.json temp-repo/
+          cd temp-repo
+          git add docs package-lock.json
+          git commit -m "Update docs and package-lock.json" || echo "No changes to commit"
           git push
-      - run: npm ci
-      - run: npx typedoc
+          cd ..
+          rm -rf temp-repo
+
       - uses: actions/upload-pages-artifact@v2
         with:
           path: ./docs
