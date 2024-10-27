@@ -68,12 +68,7 @@ const options: CryptoCoreOptions = {
   INNER_KEY_ITERATIONS: 100,
 };
 
-let cryptoCore: CryptoCore;
-
-beforeAll(() => {
-  cryptoCore = new CryptoCore(options);
-});
-
+const cryptoCore = new CryptoCore(options);
 const salt = cryptoCore.getRandomSalt();
 
 // Encrypt
