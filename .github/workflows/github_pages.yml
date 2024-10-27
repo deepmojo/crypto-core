@@ -14,10 +14,13 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.SYNC_PAT_CRYPTO }}
       - uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Specify a Node.js version
+          node-version: '18'
+
       - name: Install dependencies and generate package-lock.json
         run: |
           npm install
@@ -31,6 +34,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v2
         with:
           path: ./docs
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
