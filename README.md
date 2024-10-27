@@ -61,7 +61,7 @@ Pro Tip: In newer versions of yarn, to get a local `node_modules` folder you wil
 Here's an example of how to use the CryptoCore library to encrypt and decrypt a string:
 
 ```typescript
-import CryptoCore, { CryptoCoreOptions, getUTF8StringFromBuffer } from "@deepmojo/crypto-core";
+import CryptoCore, { CryptoCoreOptions, getUTF8StringFromBuffer, getHexStringFromBuffer } from "@deepmojo/crypto-core";
 
 const options: CryptoCoreOptions = {
   OUTER_PEPPER: 'pepper is yum',
