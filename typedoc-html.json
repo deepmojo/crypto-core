@@ -1,0 +1,19 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "name": "DeepMojo Crypto-Core Documentation",
+  "readme": "none",
+  "entryPoints": [
+    "./src/index.ts"
+  ],
+  "out": "docs",
+  "entryPointStrategy": "expand",
+  "excludeExternals": true,
+  "plugin": [],
+  "navigation": {
+    "includeCategories": false,
+    "includeGroups": true,
+    "includeFolders": false
+  },
+  "categorizeByGroup": true,
+  "hideGenerator": true
+}

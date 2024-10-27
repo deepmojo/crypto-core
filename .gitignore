@@ -1,8 +1,6 @@
 .editorconfig
 .yarn
 node_modules
-typedoc-html.json
-typedoc-md.json
 yarn.lock
 /coverage
 /keys
