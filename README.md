@@ -46,7 +46,9 @@ Pro Tip: In newer versions of yarn, to get a local `node_modules` folder you wil
 
 `npm run build` or `yarn build`: Compiles the TypeScript code using the tsconfig.json configuration file. This script is used to build the project and prepare it for distribution.
 
-`npm run build:typedoc`: Generates a `typedoc.json` in the root of the project, as needed for generating the static documentation for this library.
+`npm run build:typedoc:html`: Generates HTML site documentation in `./docs` as needed for generating the GitHub Pages documentation for this library.
+
+`npm run build:typedoc:json`: Generates a `typedoc.json` in the root of the project, as needed for generating the static documentation for this library.
 
 ## Test
 
