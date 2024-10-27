@@ -10,9 +10,9 @@
   "excludeExternals": true,
   "plugin": [],
   "navigation": {
-    "includeCategories": true,
-    "includeGroups": true,
-    "includeFolders": true
+    "includeCategories": false,
+    "includeGroups": false,
+    "includeFolders": false
   },
   "navigationLinks": {
     "GitHub": "https://github.com/deepmojo/crypto-core"

@@ -38,11 +38,7 @@ jobs:
           git config --global user.name "GitHub Actions"
 
       - name: Generate documentation
-        run: npx typedoc
-
-      # Ensure .nojekyll exists
-      - name: Create .nojekyll file
-        run: touch docs/.nojekyll
+        run: npm run build:typedoc:html
 
       - name: Push changes to crypto-core
         run: |
