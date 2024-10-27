@@ -8,6 +8,8 @@
 
 [**DeepMojo Crypto-Core**](https://github.com/deepmojo/crypto-core) is a robust TypeScript cryptography library designed for Node.js and Electron environments. It provides a streamlined interface to cryptographic operations with secure defaults, built on top of the battle-tested [node:crypto](https://github.com/nodejs/node/tree/main/src/crypto) module.
 
+### 📚 View our [**Official API Docs**](https://deepmojo.github.io/crypto-core/) 📚
+
 ### Key Features
 
 - 🔒 Comprehensive toolkit of major cryptographic operations
