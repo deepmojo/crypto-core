@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   build-and-deploy:
-    if: !contains(github.event.head_commit.message, "Update docs and package-lock.json")
+    if: '!contains(github.event.head_commit.message, "Update docs and package-lock.json")'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
