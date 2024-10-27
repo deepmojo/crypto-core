@@ -10,10 +10,21 @@
   "excludeExternals": true,
   "plugin": [],
   "navigation": {
-    "includeCategories": false,
+    "includeCategories": true,
     "includeGroups": true,
-    "includeFolders": false
+    "includeFolders": true
+  },
+  "navigationLinks": {
+    "GitHub": "https://github.com/deepmojo/crypto-core"
   },
   "categorizeByGroup": true,
-  "hideGenerator": true
+  "hideGenerator": true,
+  "searchInComments": true,
+  "visibilityFilters": {
+    "protected": true,
+    "private": false,
+    "inherited": true,
+    "external": false
+  },
+  "sort": ["source-order"]
 }
