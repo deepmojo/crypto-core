@@ -16,6 +16,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Specify a Node.js version
+      - name: Install dependencies and generate package-lock.json
+        run: |
+          npm install
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add package-lock.json
+          git commit -m "Generate package-lock.json" || echo "No changes to commit"
+          git push
       - run: npm ci
       - run: npx typedoc
       - uses: actions/upload-pages-artifact@v2
