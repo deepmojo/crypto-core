@@ -1,7 +1,6 @@
 .editorconfig
 .yarn
 node_modules
-package-lock.json
 typedoc-html.json
 typedoc-md.json
 yarn.lock
