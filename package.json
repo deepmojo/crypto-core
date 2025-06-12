@@ -14,7 +14,7 @@
     "deps:update": "npm-check --update --skip-unused --save-exact"
   },
   "dependencies": {
-    "typescript": "5.6.3"
+    "typescript": "5.8.3"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
